@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos 
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "ejemplojs",
+            "program": "${workspaceFolder}ejercicio03jsyhtml\\js\\ejemplo.js"
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "ejemplo02lenguajejs",
+            "program": "${workspaceFolder}\\ejemplo02lenguajejs\\App.js"
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "ejercicio01",
+            "program": "${workspaceFolder}\\ejercicio01\\App.js"
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "ejercicio02",
+            "program": "${workspaceFolder}\\ejercicio02\\js\\calculadora.js"
+        }
+    ]
+}
