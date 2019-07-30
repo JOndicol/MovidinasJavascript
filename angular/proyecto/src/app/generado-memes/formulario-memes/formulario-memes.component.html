@@ -1,0 +1,13 @@
+<form [formGroup]="form" (submit)="crearMeme('', color.value, textSuperior.value, textInferior.value, URL.value, false)">
+    <div>
+        <input type="text" placeholder="Texto superior" #textSuperior formControlName="textoArriba">
+        <input type="text" placeholder="Texto inferior" #textInferior formControlName="textoAbajo">
+    </div>
+
+    <div>
+        <input type="text" placeholder="URL" #URL formControlName="url">
+        <input type="text" placeholder="color" #color formControlName="color">
+    </div>
+
+    <button type="submit" [disabled]="form.invalid">Crear Meme</button>
+</form>

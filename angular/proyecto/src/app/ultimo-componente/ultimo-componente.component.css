@@ -1,0 +1,16 @@
+button{
+    border: 1px solid darkgray;
+    background-color: yellowgreen;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    width: 70px;
+    height: 30px;
+    margin: 15px;
+    padding: 7px;
+}
+
+button:hover{
+    color: yellowgreen;
+    background-color: rgba(0,0,0,0.6) 
+}

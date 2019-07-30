@@ -1,0 +1,21 @@
+<h2>Pipes</h2>
+
+<div>
+    <h3>{{nombreProducto | titlecase | reverse}}</h3>
+    <p>Descripcion: {{descripcionProducto | hideWords:'que':'no'}}</p>
+    <p>Precio: {{precio | doblete:5:7 | currency:'EUR' | currencyRight}}</p>
+    <p>Fecha de compra: {{fechaCompra | date:'dd/MM/yyyy'}}</p>
+
+</div>
+
+<input type="text" placeholder="Filtro" (input)="txtFiltro=$event.target.value" #inputFiltro>
+<input type="text" placeholder="Nueva mascota" #mascota>
+<button (click)="addMascota(mascota.value)">Añadir</button>
+
+<ul>
+    <li *ngFor="let mascota of mascotas">{{mascota}}</li>
+</ul>
+
+<ul>
+    <li *ngFor="let mascota of mascotas | filtro:txtFiltro">{{mascota}}</li>
+</ul>

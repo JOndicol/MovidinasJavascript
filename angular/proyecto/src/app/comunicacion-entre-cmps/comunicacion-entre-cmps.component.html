@@ -1,0 +1,15 @@
+<p>comunicacion-entre-cmps</p>
+
+<p>Me llamo Anakin</p>
+<p>Mi hijo se llama {{nombreLuke}}</p>
+<p>Mi hija se llama {{nombreLeia}}</p>
+
+
+<hr>
+
+<app-cmp-leia [miNombre] = "nombreLeia" (nombreCambiado) = "cambiarNombreLeia($event)"></app-cmp-leia>
+
+<hr>
+
+<app-cmp-luke [miNombre] = "nombreLuke" [nombreHermana]="nombreLeia"></app-cmp-luke>
+<input type="text">

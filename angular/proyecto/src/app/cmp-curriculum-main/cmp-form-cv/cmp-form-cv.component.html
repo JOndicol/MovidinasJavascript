@@ -1,0 +1,9 @@
+<div>
+    <p>Nombre: </p><input type="text" [value]="nombre" (input)="enviar($event.target.value, 'nombre')">
+    <p>Apellidos: </p><input type="text"[value]="apellidos" (input)="enviar($event.target.value, 'apellidos')">
+    <p>Email: </p><input type="text" [value]="email" (input)="enviar($event.target.value, 'email')">
+    <p>Foto: </p><input type="text" [value]="foto" (input)="enviar($event.target.value, 'foto')">
+    <p>Skill: </p><input type="text" #skill> <button (click)="agregarSkill(skill.value)" (click)="enviarSkills($event.target.value)">Añadir Skill</button>
+</div>
+
+<p>{{skills.join(',')}}</p>

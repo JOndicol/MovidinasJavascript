@@ -1,0 +1,19 @@
+<app-formulario-memes (eventoMeme)="mostrar($event)"></app-formulario-memes>
+
+<app-cmp-meme [meme] ="meme"></app-cmp-meme>
+
+<ul>
+    <li *ngFor="let i of listaAux">{{i | json}}</li>
+</ul>
+
+<div class="image_container" *ngFor="let i of listaAux">
+
+        <div class="text-wrapper-top" style="position:relative; top:60px; width: 100%">
+            <p class="text_top" [ngStyle]="{color: meme.color, width: '100%'}">{{meme.textoArriba}}</p>
+        </div>
+        <img src={{meme.imagenURL}} alt="">
+        <div class="text-wrapper-bot" style="position:relative; bottom:60px; width: 100%">
+            <p class="text_bot" [ngStyle]="{color: meme.color}">{{meme.textoAbajo}}</p>
+        </div>
+    
+</div>

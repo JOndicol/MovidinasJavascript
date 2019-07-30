@@ -1,0 +1,5 @@
+<app-cmp-form-cv [nombre]="nombre" [apellidos]="apellidos" [email]="email" [foto]="foto" [skills]="skills"
+(eventoTransmisor)="cambiar($event)"
+(eventoSkills) = "cambiarSkills($event)"></app-cmp-form-cv>
+
+<app-cmp-preview-cv [nombre]="nombre" [apellidos]="apellidos" [email]="email" [foto]="foto" [skills]="skills"></app-cmp-preview-cv>

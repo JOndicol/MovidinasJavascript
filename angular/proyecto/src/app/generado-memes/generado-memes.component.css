@@ -1,0 +1,18 @@
+.image_container, .text-wrapper-top, .text-wrapper-bot, .text_top, .text_bot{
+    font-family: impact;
+    font-size: 50px;
+    word-spacing: -2px;
+    padding: 0 5px;
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+    white-space: nowrap;
+    width: 600px;
+}
+
+.image_container img {
+    width: 100%;
+}
+
+.image_container p {
+    text-align: center;
+    width: 100%;
+}
